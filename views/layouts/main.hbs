@@ -1,10 +1,23 @@
-
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
+
 <head>
     <title>Đây là đài tiếng nói Việt Nam</title>
 </head>
+
 <body>
-   <h1>Xin chao moi nguoi</h1>
+    <h1>Xin chao moi nguoi</h1>
+    
+    {{#if showBody}}
+    {{{body}}}
+    {{/if}}
+
+    {{#if showContentTinhToan}}
+    <h2>SoA: {{soA}}</h2>
+    <h2>SoB: {{soB}}</h2>
+    <h2>Phep tinh: {{operator}}</h2>
+    <h2>Ket qua: {{kq}}</h2>
+    {{/if}}
 </body>
+
 </html>
